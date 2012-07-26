@@ -1,6 +1,7 @@
 extends layout
 
-script(src='/js/articles.js')
+block append scripts
+  script(src='http://daddye.disqus.com/count.js', type='text/javascript')
 
 block content
   // underscore helps us filter and sort our articles
@@ -17,7 +18,10 @@ block content
         h2
           a(href=article.url)= article.title
       section.content!= article.intro
-      if article.hasMore
-        p.read-more
-          a(href=article.url) read more
-  a(href='archive.html')#archive Visit the archives!
+      section.footer
+        a.comments(href=article.url + '#disqus_thread', data-disqus-identifier=article.url) ...
+        | |
+        if article.hasMore
+          a.has-more(href=article.url) read more
+
+  a.archive(href='archive.html') Visit the archives!

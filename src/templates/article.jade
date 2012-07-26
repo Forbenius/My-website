@@ -4,7 +4,13 @@ block prepend title
   = page.title
   |  - 
 
+append head
+  script(type='text/javascript')
+    var disqus_identifier = '#{page.url}'
+  script(src='http://daddye.disqus.com/embed.js', type='text/javascript')
+
 block content
   h1= page.title
   article.post
     section.content!= page.html
+  #disqus_thread
