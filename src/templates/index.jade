@@ -20,8 +20,8 @@ block content
       section.content!= article.intro
       section.footer
         a.comments(href=article.url + '#disqus_thread', data-disqus-identifier=article.url) ...
-        | |
         if article.hasMore
-          a.has-more(href=article.url) read more
+          | &nbsp;&nbsp;
+          a.more(href=article.url) read more
 
   a.archive(href='archive.html') Visit the archives!
