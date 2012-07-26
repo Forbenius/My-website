@@ -9,7 +9,7 @@ In this repo I'll store my refactoring of [personal site](http://daddye.it)
 * The template engine [jade](https://github.com/visionmedia/jade)
 * [UglifyJS](https://github.com/mishoo/UglifyJS) to compress in a single file my coffee scripts
 * [CleanCSS](https://github.com/GoalSmashers/clean-css)
-* The cool [Coffee Script], a little language that compile to JavaScript
+* The cool [Coffee Script](http://coffeescript.org), a little language that compile to JavaScript
 * [Browserify](https://github.com/substack/node-browserify) to make our life easier with `require`
 * [JQuery](https://github.com/jquery/jquery) who need an explanation ???
 
