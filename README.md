@@ -15,7 +15,8 @@ In this repo I'll store my refactoring of [personal site](http://daddye.it)
 
 ## Installation
 
-Install [node.js](http://nodejs.org), install the following [NPM](http://npmjs.org) packages:
+
+Install [node.js](http://nodejs.org), install the following [NPM](http://npmjs.org) packages from your terminal:
 
 ```sh
 $ npm install -g wintersmith stylus nib browserify uglify-js clean-css
@@ -24,43 +25,25 @@ $ npm install -g wintersmith stylus nib browserify uglify-js clean-css
 After that clone the project:
 
 ```sh
-$ git clone git://github.com/DAddYE/DAddYE.it
-$ cd DAddYE.it
+$ git clone git://github.com/DAddYE/daddye.github.com
+$ cd daddye.github.com/src
 ```
 
-Install a local copy of `jquery-browserify`
+**REMEMBER:** sources live in `src` directory.
 
-```sh
-$ npm install jquery-browserify
-```
-
-And finally run the project!
+To preview my site run:
 
 ```sh
 $ wintersmith preview
 ```
 
+To build it you can run `make` inside the `src` folder, otherwise:
+
+```sh
+$ wintersmith build -o ../
+```
+
 ## Copyright
 
-Copyright (C) 2011 Davide D'Agostino -
-[@daddye](http://twitter.com/daddye)
-
-Permission is hereby granted, free of charge, to any person obtaining a
-copy of this software and
-associated documentation files (the “Software”), to deal in the Software
-without restriction, including without
-limitation the rights to use, copy, modify, merge, publish, distribute,
-sublicense, and/or sell copies of the Software,
-and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included
-in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
-OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Copyright (C) 2012 Davide D'Agostino -
+[@DAddYE](http://twitter.com/daddye)
