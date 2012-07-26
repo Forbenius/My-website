@@ -11,10 +11,9 @@ In this repo I'll store my refactoring of [personal site](http://daddye.it)
 * [CleanCSS](https://github.com/GoalSmashers/clean-css)
 * The cool [Coffee Script](http://coffeescript.org), a little language that compile to JavaScript
 * [Browserify](https://github.com/substack/node-browserify) to make our life easier with `require`
-* [JQuery](https://github.com/jquery/jquery) who need an explanation ???
+* [JQuery](https://github.com/jquery/jquery) who need an explanation ...
 
 ## Installation
-
 
 Install [node.js](http://nodejs.org), install the following [NPM](http://npmjs.org) packages from your terminal:
 
@@ -29,7 +28,7 @@ $ git clone git://github.com/DAddYE/daddye.github.com
 $ cd daddye.github.com/src
 ```
 
-**REMEMBER:** sources live in `src` directory.
+**REMEMBER:** sources lives in `src` directory.
 
 To preview my site run:
 
