@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DAddYE Resume and Blog</title>
+    <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://localhost:3000</link>
+    <description>Art and love for programming</description>
+    <pubDate>Sat, 01 Oct 2011 15:00:00 +0200</pubDate>
+    <generator>The mighty Wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>Code and stuff!</title>
+      <link>http://localhost:3000/articles/another-test/</link>
+      <pubDate>Sat, 01 Oct 2011 15:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:3000/articles/another-test/</guid>
+      <author></author>
+      <description>&lt;p&gt;Syntax highlighting with highlight.js
+
+&lt;/p&gt;
+&lt;h3&gt;JavaScript&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;coffee&quot;&gt;name = -&gt;
+  &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; name != bar
+    console.log &lt;span class=&quot;string&quot;&gt;'hello world'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; factorial(n) {
+  &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (n === &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) {
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;
+  }
+  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; n * factorial(n - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;More samples&lt;/h2&gt;
+&lt;p&gt;Taken from &lt;a href=&quot;https://en.wikipedia.org/wiki/Hello_world_program_examples&quot;&gt;wikipedia&lt;/a&gt;.
+
+&lt;/p&gt;
+&lt;h3&gt;C&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#include &lt;stdio.h&gt;&lt;/span&gt;
+
+int main(void)
+{
+  printf(&lt;span class=&quot;string&quot;&gt;&quot;Hello world\n&quot;&lt;/span&gt;);
+  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;C++&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;cpp&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#include &lt;iostream&gt;&lt;/span&gt;
+
+int main()
+{
+  std::cout &lt;&lt; &lt;span class=&quot;string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt; &lt;&lt; std::endl;
+  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;C-sharp&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;csharp&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; ExampleClass
+{
+    &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; void Main()
+    {
+        System.Console.WriteLine(&lt;span class=&quot;string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;);
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;COBOL&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;cobol&quot;&gt;       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HELLO-WORLD.
+       PROCEDURE DIVISION.
+           DISPLAY 'Hello, world'.
+           STOP RUN.&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Erlang&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;erlang&quot;&gt;io:format(&quot;~s~n&quot;, [&quot;hello, world&quot;])&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Go&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;go&quot;&gt;package main
+
+import &quot;fmt&quot;
+
+func main() {
+   fmt.Println(&quot;Hello World!&quot;)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Java&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; HelloWorld {
+   &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; void main(String[] args) {
+       System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;);
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;ObjectiveC&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;objc&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#import &lt;stdio.h&gt;&lt;/span&gt;
+
+int main(void)
+{
+    printf(&lt;span class=&quot;string&quot;&gt;&quot;Hello, World!\n&quot;&lt;/span&gt;);
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;PHP&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;php&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;&lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'Hello, world'&lt;/span&gt;; &lt;span class=&quot;preprocessor&quot;&gt;?&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Ruby&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;puts &quot;Hello world!&quot;&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+  </channel>
+</rss>

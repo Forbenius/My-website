@@ -1,0 +1,38 @@
+!!! 5
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      title
+        block title
+          = locals.name
+      link(rel='alternate',  href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      link(rel='stylesheet', href='/assets/css/main.css')
+      link(rel='shortcut icon', href='/favicon.ico')
+  body
+    #sidebar
+      .inner
+        .me
+          a(href='/')
+            img(src='/assets/img/DAddYE.png', height='180', width='180', alt='This is me!!!')
+        .name DAddYE
+        .bio Ruby and JavaScript Programmer
+        ul.menu
+          li.pink: a(href='/') Blog
+          li.yellow: a(href='/pages/bio/') Bio
+          li.blue: a(href='/pages/languages/') Languages
+          li.green: a(href='/pages/projects/') Projects
+          li.purple: a(href='/pages/my-web-sites/') My WebSites
+        h3 Follow me
+        .social
+          a(href='http://twitter.com/daddye',target='_blank')
+            img(src='/assets/img/tw.png',width='50',height='50')
+          a(href='http://facebook.com/daddye.it',target='_blank')
+            img(src='/assets/img/fb.png',width='50',height='50')
+      block sidebar
+    #content
+      .inner
+        block content
+
+    // Scripts
+    script(src='/assets/js/main.js', type='text/javascript')

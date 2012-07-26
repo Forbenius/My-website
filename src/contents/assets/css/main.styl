@@ -1,0 +1,186 @@
+@import 'nib'; global-reset();
+@import 'github.css'
+@import url('http://fonts.googleapis.com/css?family=Inconsolata');
+@import url('http://fonts.googleapis.com/css?family=Yellowtail');
+
+// Here my vars
+$black       = #3f3f3f
+$blue        = #7bafc2
+$lightBlue   = #86c0b8
+$white       = #f7f7f7
+$gray        = #909090
+$darkGray    = #565656
+$lightGray   = #a7a7a7
+$lighterGray = #d0d0d0
+$green       = #a0b56c
+$yellow      = #f4bf75
+$orange      = #d28445
+$red         = #bc5653
+$pink        = #b98baf
+$purple      = #9e566f
+
+$font        = Helvetica, Arial
+$fontSize    = 14px
+$lineHeight  = 28px
+$margin      = $lineHeight / 2
+
+// Types
+a
+  color: $blue
+  text-decoration: none
+  &:hover,
+  .active
+    color: $lightBlue
+
+h1, h2
+  background: url('/assets/img/hr.png') repeat-x bottom right
+  box-shadow: 0px 3px 5px -5px $black
+  font-size: 35px
+  line-height: @font-size
+  color: $red
+  text-shadow: 2px 1px 0px $purple
+  font-weight: 400
+  margin: ($margin * 2) 0px
+  a
+    color: $red
+    &:hover,
+    .active
+      color: $yellow
+hr
+  border: 0
+  height: 2px
+  background: url('/assets/img/hr.png')
+pre
+  clearfix()
+  code
+    border-radius: 2px
+    background-color: lighten($blue,35)
+    border: 1px solid $blue
+    // box-shadow: inset 1px 2px 3px rgba($blue,.2)
+    margin: $margin 0px
+    font-family: 'Inconsolata', sans-serif
+    font-size: 14px
+    line-height: 16px
+    font-weight: 400
+
+body
+  color: $black
+  font-family: $font
+  font-size: $fontSize
+  line-height: $lineHeight
+  font-weight: 100
+  position: relative
+  background-image: url('/assets/img/bg_w.png')
+  clearfix()
+
+  #sidebar
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 0px
+    width: 250px
+    background-color: #272727
+    background-image: url('/assets/img/bg.png')
+    border-right: 3px solid darken($darkGray,5)
+    // box-shadow: 3px 0px 5px $black
+    .inner
+      text-align: center
+      .me a img
+        transform: rotate(0deg)
+        transition: all 1.5s ease-in-out
+        &:hover
+          transform: rotate(360deg)
+      .name
+        font-family: 'Yellowtail', cursive
+        font-size: $fontSize * 3
+        line-height: @font-size
+        color: $red
+        text-shadow: 2px 1px 0px $pink
+      .bio
+        color: $green
+        line-height: 20px
+      h3
+        font-size: 14px
+        color: $orange
+        margin: ($margin * 2) 0px 0px 0px
+      ul.menu
+        margin-top: $margin * 2
+        text-align: left
+        li
+          text-align: left
+          border-top: 1px solid darken($black,20)
+          margin-top: 1px
+          &.blue a
+            border-left-color: $blue
+            &:hover { color: $blue }
+          &.lightBlue a
+            border-left-color: $lightBlue
+            &:hover { color: $lightBlue }
+          &.white a
+            border-left-color: $white
+            &:hover { color: $white }
+          &.gray a
+            border-left-color: $gray
+            &:hover { color: $gray }
+          &.darkGray a
+            border-left-color: $darkGray
+            &:hover { color: $darkGray }
+          &.green a
+            border-left-color: $green
+            &:hover { color: $green }
+          &.yellow a
+            border-left-color: $yellow
+            &:hover { color: $yellow }
+          &.orange a
+            border-left-color: $orange
+            &:hover { color: $orange }
+          &.red a
+            border-left-color: $red
+            &:hover { color: $red }
+          &.pink a
+            border-left-color: $pink
+            &:hover { color: $pink }
+          &.purple a
+            border-left-color: $purple
+            &:hover { color: $purple }
+          a
+            border-left-width: 3px
+            border-left-style: solid
+            border-top: 1px solid $black
+            display: block
+            padding: 5px 2px
+            padding-left: 10px
+            color: $white
+            transition: all 250ms ease-in-out
+            &:hover,
+            .active
+              color: $red
+              border-left-width: 26px
+              background-color: rgba($white,.05)
+
+  #content
+    margin-left: 250px
+
+    // Need to restile a bit our ul tags
+    ul
+      margin: $margin 0px
+      li
+        list-style-type: square
+        margin-left: 15px
+        line-height: 18px
+
+    .inner
+      clearfix()
+      width: 750px
+      padding: 0px 0px 0px 30px
+
+    .post
+      .content
+        h2
+          font-size: 20px
+          line-height: @font-size
+          color: $blue
+          margin: $margin 0px
+          box-shadow: none
+          background-image: none
+          text-shadow: none
