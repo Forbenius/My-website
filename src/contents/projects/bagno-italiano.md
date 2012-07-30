@@ -2,6 +2,7 @@ title: Bagno italiano
 date: 2012-07-27
 template: project.jade
 langs: ruby, padrino, slim, coffee, stylus
+link: http://www.bagnoitaliano.it
 
 BagnoItaliano è un grosso e-commerce leader nel suo settore sviluppato in [padrino](http://github.com/padrino-framework/padrino).
 Al momento questa struttura gestisce oltre 1.000 prodotti, centinaia di ordini,

@@ -1,10 +1,7 @@
 title: My projects
 template: projects.jade
 
-Here a (few) list of projects where I worked recently
+In questa sezione troverete alcuni progetti **opensource** ed alcuni dei miei lavori più importanti.
 
-* opensource projects
-* some personal projects
-* some interesting job works
-
-Other?
+Mentre se volete dare un occhio a tutti i siti che ho fatto ...e di cui ho memoria... 
+potete dare un occhio alla pagina [web sites](/web-sites)

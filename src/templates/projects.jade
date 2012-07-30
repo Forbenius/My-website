@@ -11,13 +11,12 @@ block content
       - var projects = _(contents.projects._.pages).sortBy(function(i){return -i.date})
       each project in projects
         li.project
-          h2
-            = project.title
-            .em
-              = 'Written in: ' + project.metadata.langs
+          header
+            h2= project.title
+            .em= 'Written in: ' + project.metadata.langs
           - var img = contents.projects.getImage(project.basename)
           - img = img ? img.thumb('750x300') : 'http://placehold.it/750x300&text=NO+IMAGE'
-          .content
-            img(src=img, width=750, height=300)
+          section.content(onclick="window.open('#{project.metadata.link}','_blank')")
+            img(src=img, width=750, height=300, alt=project.title)
             .text
               .inner!= project.html
