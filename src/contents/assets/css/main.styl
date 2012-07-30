@@ -32,6 +32,12 @@ a
   .active
     color: $lightBlue
 
+strong
+  font-weight: 600
+
+b
+  font-weight: 400
+
 h1, h2
   background: url('/assets/img/hr.png') repeat-x bottom right
   box-shadow: 0px 3px 5px -5px $black
@@ -50,10 +56,21 @@ hr
   border: 0
   height: 2px
   background: url('/assets/img/hr.png')
+
+p
+  margin: $margin 0px
+
+ul.styled
+  margin: $margin 0px
+  li
+    list-style-type: square
+    margin-left: 15px
+    line-height: 18px
+
 pre
   clearfix()
   code
-    border-radius: 2px
+    border-radius: 1px
     background-color: lighten($blue,35)
     border: 1px solid $blue
     // box-shadow: inset 1px 2px 3px rgba($blue,.2)
@@ -163,11 +180,7 @@ body
 
     // Need to restile a bit our ul tags
     ul
-      margin: $margin 0px
-      li
-        list-style-type: square
-        margin-left: 15px
-        line-height: 18px
+      @extend ul.styled
 
     .inner
       clearfix()
@@ -186,15 +199,89 @@ body
           text-shadow: none
       .footer
         padding-top: 5px
-        text-align: right
-        a
-          padding-left: 18px
-          color: $green
-          &.comments
-            background: url('/assets/img/comments.png') no-repeat left center
-          &.more
-            background: url('/assets/img/more.png') no-repeat left center
+        clearfix()
+        .left
+          font-size: 12px
+          color: $gray
+        .right
+          a
+            padding-left: 18px
             color: $green
-          &.comments:hover,
-          &.more:hover
-            color: $orange
+            &.comments
+              background: url('/assets/img/comments.png') no-repeat left center
+            &.more
+              background: url('/assets/img/more.png') no-repeat left center
+              color: $green
+            &.comments:hover,
+            &.more:hover
+              color: $orange
+
+    .projects
+      ul.items
+        > li
+          list-style-type: none
+          margin: 20px 0px
+          clearfix()
+          h2
+            font-size: 22px
+            margin: 0px
+            box-shadow: none
+            background-image: none
+            text-shadow: none
+            color: $purple
+            clearfix()
+            .em
+              float: right
+              font-size: 12px
+              color: $gray
+          .content
+            position:relative
+            cursor: pointer
+            overflow: hidden
+            height: 300px
+            border: 2px solid rgba($lighterGray,.3)
+            img
+              transition: all 300ms ease-in-out
+            .text
+              border-radius: 2px
+              position: absolute
+              left: 0px
+              right: 0px
+              bottom: 0px
+              height: 100%
+              top: 300px
+              height: 100%
+              background-color: $blue
+              background-color: rgba($blue,.1)
+              // box-shadow: inset 0px 0px 5px $white
+              transition: all 300ms ease-in-out
+              .inner
+                width: auto
+                font-size: $fontSize
+                line-height: $lineHeight
+                padding: 10px
+                ul
+                  @extend ul.styled
+                a
+                  color: $red
+                  &:hover {color: $orange}
+            &:hover
+              box-shadow: 0px 5px 5px rgba($lightGray,.3)
+              .text
+                top: 0px
+              img
+                filter: blur(2px)
+                opacity: .05
+
+    #disqus_thread
+      margin-top: 20px
+
+// Some class helpers
+.left
+  float: left
+.right
+  float: right
+.em
+  font-style: italic
+.b
+  font-weight: bold

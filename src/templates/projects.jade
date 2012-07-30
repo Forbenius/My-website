@@ -1,0 +1,23 @@
+extends layout
+
+block prepend title
+  = page.title + ' - '
+
+block content
+  h1= page.title
+  .projects
+    header!= page.html
+    ul.items
+      - var projects = _(contents.projects._.pages).sortBy(function(i){return -i.date})
+      each project in projects
+        li.project
+          h2
+            = project.title
+            .em
+              = 'Written in: ' + project.metadata.langs
+          - var img = contents.projects.getImage(project.basename)
+          - img = img ? img.thumb('750x300') : 'http://placehold.it/750x300&text=NO+IMAGE'
+          .content
+            img(src=img, width=750, height=300)
+            .text
+              .inner!= project.html

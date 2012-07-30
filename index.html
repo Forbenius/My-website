@@ -27,7 +27,20 @@
     </div>
     <div id="content">
       <div class="inner">
-        <!-- underscore helps us filter and sort our articles-->
+        <article class="post">
+          <header>
+            <h2><a href="/articles/new-site/">My new site</a></h2>
+          </header>
+          <section class="content"><p>Here the first blog post
+</p>
+</section>
+          <section class="footer">
+            <div class="left">Written 4 days ago
+            </div>
+            <div class="right"><a href="/articles/new-site/#disqus_thread" data-disqus-identifier="/articles/new-site/" class="comments">...</a>
+            </div>
+          </section>
+        </article>
         <article class="post">
           <header>
             <h2><a href="/articles/another-test/">Code and stuff!</a></h2>
@@ -46,11 +59,17 @@
   <span class="keyword">return</span> n * factorial(n - <span class="number">1</span>);
 }</code></pre>
 </section>
-          <p class="read-more"><a href="/articles/another-test/">read more</a></p>
-        </article><a href="archive.html" id="archive">Visit the archives!</a>
+          <section class="footer">
+            <div class="left">Written 10 months ago
+            </div>
+            <div class="right"><a href="/articles/another-test/#disqus_thread" data-disqus-identifier="/articles/another-test/" class="comments">...</a>&nbsp;&nbsp;<a href="/articles/another-test/" class="more">read more</a>
+            </div>
+          </section>
+        </article><a href="archive.html" class="archive">Visit the archives!</a>
       </div>
     </div>
     <!-- Scripts-->
     <script src="/assets/js/main.js" type="text/javascript"></script>
+    <script src="http://daddye.disqus.com/count.js" type="text/javascript"></script>
   </body>
 </html>

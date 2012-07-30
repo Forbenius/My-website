@@ -4,14 +4,7 @@ block append scripts
   script(src='http://daddye.disqus.com/count.js', type='text/javascript')
 
 block content
-  // underscore helps us filter and sort our articles
-  - var articles = _.chain(contents.articles._.directories).map(function(item) {
-  -   // map articles to index pages of subdirectories of 'articles'
-  -   return item.index
-  - }).compact().sortBy(function(item) { // compact removes any directories w/o an index
-  -   // sort them by date
-  -   return -item.date
-  - }).first(5).value() // and finally take the first 5
+  - var articles = contents.get('articles', {sort: 'date', limit: locals.index_articles})
   each article in articles
     article.post
       header
@@ -19,9 +12,12 @@ block content
           a(href=article.url)= article.title
       section.content!= article.intro
       section.footer
-        a.comments(href=article.url + '#disqus_thread', data-disqus-identifier=article.url) ...
-        if article.hasMore
-          | &nbsp;&nbsp;
-          a.more(href=article.url) read more
+        .left
+          = 'Written ' + article.momentDate.fromNow()
+        .right
+          a.comments(href=article.url + '#disqus_thread', data-disqus-identifier=article.url) ...
+          if article.hasMore
+            | &nbsp;&nbsp;
+            a.more(href=article.url) read more
 
   a.archive(href='archive.html') Visit the archives!
