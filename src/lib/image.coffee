@@ -11,7 +11,7 @@ module.exports = (wintersmith, callback) ->
 
   class Image extends ContentPlugin
     constructor: (@_filename, @_base) ->
-      @_thumb_path = '/_thumbs'
+      @_thumb_path = '/assets/img/thumbs'
       thumb_path = path.join(@_base, @_thumb_path)
       fs.mkdirSync(thumb_path) unless fs.existsSync(thumb_path)
 

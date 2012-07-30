@@ -15,4 +15,4 @@ In particolare io mi sono occupato del:
 
 Seguo ancora molto questo progetto poiché si è dimostrato di elevato interesse per la comunità degli sviluppatori
 ruby; permettendomi oltre che di aumentare le mie capacità come programmatore che _coordinatore_ progetto
-in un ambiente molto molto
+in un ambiente molto molto competitivo ed esigente
