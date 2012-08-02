@@ -1,5 +1,6 @@
 template: article.jade
 title: Me, me and my Story
+comments: no
 
 Mi chiamo Davide D'Agostino e sono nato il 9 novembre 1983 a Milano (Italia).
 
