@@ -1,6 +1,6 @@
-template: article.jade
-title: My cool websites
+template: websites.jade
+title: My websites
 
-Here I need a decent template to show 150+ and more websites.
+Negli anni ho scritto diverse centinaia di siti web, alcuni semplici alcuni più complessi.
 
-Thumb + small desc ... or so
+Eccone qualcuno:

@@ -1,0 +1,16 @@
+extends layout
+
+block prepend title
+  = page.title
+  |  - 
+
+block content
+  h1= page.title
+  article.post
+    section.content!= page.html
+
+  section.gallery
+    - var sortedImages = _.sortBy(contents.pages['my-web-sites']._.images, function(i){return parseInt(i.basename) })
+    each image in sortedImages
+      a(href='http://' + image.basename.replace(/^\d+_/,''),target='blank',rel='nofollow')
+        img(src=image.url,width=220,height=180)
