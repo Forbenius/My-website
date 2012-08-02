@@ -8,6 +8,7 @@ util = require 'util'
 module.exports = (wintersmith, callback) ->
 
   {ContentTree, ContentPlugin, logger} = wintersmith
+  {Page} = wintersmith.defaultPlugins
 
   class Image extends ContentPlugin
     constructor: (@_filename, @_base) ->
@@ -55,7 +56,7 @@ module.exports = (wintersmith, callback) ->
     # Is there a dry way for this?
     @_basename ?= path.basename(@_filename, path.extname(@_filename))
 
-  ContentTree::getImage = (filename) ->
+  ContentTree::findImage = (filename) ->
     _.find @._.images, (img) ->
       name = img._filename
       img if path.basename(name, path.extname(name)) is filename

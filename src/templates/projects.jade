@@ -8,13 +8,14 @@ block content
   .projects
     header!= page.html
     ul.items
-      - var projects = _(contents.projects._.pages).sortBy(function(i){return -i.date})
+      - var pages    = _(contents.pages.projects._.pages).sortBy(function(i){return -i.date})
+      - var projects = _(pages).filter(function(i){if(!i.basename.match(/^index/)) return i})
       each project in projects
         li.project
           header
             h2= project.title
             .em= 'Written in: ' + project.metadata.langs
-          - var img = contents.projects.getImage(project.basename)
+          - var img = contents.pages.projects.findImage(project.basename)
           - img = img ? img.thumb('750x300') : 'http://placehold.it/750x300&text=NO+IMAGE'
           section.content(onclick="window.open('#{project.metadata.link}','_blank')")
             img(src=img, width=750, height=300, alt=project.title)

@@ -30,4 +30,5 @@ module.exports = (wintersmith, callback) ->
 
   ##
   # Back to the hell
+  #
   callback()
