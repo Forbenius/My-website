@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DAddYE Resume and Blog</title>
-    <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"></atom:link>
-    <link>http://localhost:3000</link>
+    <atom:link href="http://daddye.github.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://daddye.github.com</link>
     <description>Art and love for programming</description>
     <pubDate>Fri, 27 Jul 2012 02:00:00 +0200</pubDate>
     <generator>The Puff DAddYE ...</generator>
     <language>en</language>
     <item>
       <title>My new site</title>
-      <link>http://localhost:3000/articles/new-site/</link>
+      <link>http://daddye.github.com/articles/new-site/</link>
       <pubDate>Fri Jul 27 2012 02:00:00 GMT+0200 (CEST)</pubDate>
-      <guid isPermaLink="true">http://localhost:3000/articles/new-site/</guid>
+      <guid isPermaLink="true">http://daddye.github.com/articles/new-site/</guid>
       <author>DAddYE</author>
       <description>&lt;p&gt;Here the first blog post
 &lt;/p&gt;
@@ -20,9 +20,9 @@
     </item>
     <item>
       <title>Code and stuff!</title>
-      <link>http://localhost:3000/articles/another-test/</link>
+      <link>http://daddye.github.com/articles/another-test/</link>
       <pubDate>Sat Oct 01 2011 15:00:00 GMT+0200 (CEST)</pubDate>
-      <guid isPermaLink="true">http://localhost:3000/articles/another-test/</guid>
+      <guid isPermaLink="true">http://daddye.github.com/articles/another-test/</guid>
       <author>DAddYE</author>
       <description>&lt;p&gt;Syntax highlighting with highlight.js
 
