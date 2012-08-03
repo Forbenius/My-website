@@ -1,7 +1,7 @@
 title: Padrino Framework
 category: OpenSource
 langs: Ruby
-date: 2011-07-27
+date: 2012-08-03
 link: http://www.padrinorb.com
 
 Padrino è un progetto nato diversi anni fa insieme a [Nathan Esquenazi](https://github.com/nesquena).
