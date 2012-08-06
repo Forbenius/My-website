@@ -4,15 +4,14 @@ langs: Ruby
 date: 2012-08-03
 link: http://www.padrinorb.com
 
-Padrino è un progetto nato diversi anni fa insieme a [Nathan Esquenazi](https://github.com/nesquena).
-E' un framework basato su sinatra per aumentare drasticamente lo sviluppo di siti ed applicazioni web.
+Padrino is a project born several years ago, through a collaboration with [Nathan Esquenazi](https://github.com/nesquena).
+It is a framework based on Sinatra to improve dramatically the website and application development.
 
-In particolare io mi sono occupato del:
+I worked about:
 
 * Core
 * Logger
 * Interfaccia Admin
 
-Seguo ancora molto questo progetto poiché si è dimostrato di elevato interesse per la comunità degli sviluppatori
-ruby; permettendomi oltre che di aumentare le mie capacità come programmatore che _coordinatore_ progetto
-in un ambiente molto molto competitivo ed esigente
+I'm still working on this project because the community of ruby programmers is showing high interest.
+It allowed me to improve me skills as coder ad as _coordinator_ in a competitive and exigent environment.
