@@ -4,15 +4,14 @@ template: project.jade
 langs: ruby, padrino, slim, coffee, stylus
 link: http://www.bagnoitaliano.it
 
-BagnoItaliano è un grosso e-commerce leader nel suo settore sviluppato in [padrino](http://github.com/padrino-framework/padrino).
-Al momento questa struttura gestisce oltre 1.000 prodotti, centinaia di ordini,
-magazzini (dato che è anche studiato per il drop-shipping), fatturazione, statistiche etc...
-Insomma tutto il necessario per vendere al giorno d'oggi comodamente e velcemente su internet.
+BagnoItaliano is a lead e-commerce as bathroom supplayer, based on [padrino](http://github.com/padrino-framework/padrino).
+At the time the company is managing more then 1.000 goods, with hundreds of orders, warehouse (built even to ease drop-shipping),
+biloing, statistics. They have everything needs to sell today through a web platform.
 
-**Tutta** la struttura, interfaccia, pannello amministrativo è stato scritto da me
+**The whole** stucture, interface, admin panel have been programmed by me
 
-Peculiarità tecnice:
+technical features:
 
-* 35 Tabelle
+* 35 tables
 * Carosello
 * Menu Header
