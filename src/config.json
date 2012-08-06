@@ -7,9 +7,14 @@
     "index_articles": 3
   },
   "port": 3000,
+  "ignore": ".DS_Store",
   "plugins": [
     "wintersmith-perian",
-    "./lib/ext",
     "./lib/image"
+  ],
+  "require": [
+    "moment",
+    "wintersmith/node_modules/coffee-script",
+    "./lib/helpers"
   ]
 }

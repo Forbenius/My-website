@@ -2,7 +2,7 @@ fs   = require 'fs'
 path = require 'path'
 im   = require 'imagemagick'
 url  = require 'url'
-_    = require 'underscore'
+_    = require 'wintersmith/node_modules/underscore'
 util = require 'util'
 
 module.exports = (wintersmith, callback) ->

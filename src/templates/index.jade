@@ -4,8 +4,8 @@ block append scripts
   script(src='http://daddye.disqus.com/count.js', type='text/javascript')
 
 block content
-  - var articles = contents.get('articles', {sort: 'date', limit: locals.index_articles})
-  each article in articles
+  // - var articles = contents.sort('articles', {by: 'date', limit: locals.index_articles})
+  each article in helpers.sortArticles(contents)
     article.post
       header
         h1
@@ -13,7 +13,7 @@ block content
       section.content!= article.intro
       section.footer
         .left
-          = 'Written ' + article.momentDate.fromNow()
+          = 'Written ' + moment(article.momentDate).fromNow()
         .right
           a.comments(href=article.url + '#disqus_thread', data-disqus-identifier=article.url) ...
           if article.hasMore

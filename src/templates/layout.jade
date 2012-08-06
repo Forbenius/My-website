@@ -23,17 +23,17 @@ html(lang='en')
           li.blue: a(href='/pages/languages/') Languages
           li.green: a(href='/pages/projects/') Projects
           li.purple: a(href='/pages/my-web-sites/') My WebSites
-        h3 Follow me
-        .social
-          a(href='http://twitter.com/daddye',target='_blank')
-            img(src='/assets/img/tw.png',width='50',height='50',alt='Follow me on twitter')
-          a(href='http://facebook.com/daddye.it',target='_blank')
-            img(src='/assets/img/fb.png',width='50',height='50',alt='Add me as a friend on Facebook')
-      block sidebar
+          li.gray: a(href='/pages/contacts/') Contacts
+
+        block sidebar
+
+      footer © #{moment().year()} - DAddYE.it
     #content
       .inner
         block content
 
     // Scripts
     block scripts
+      script(type='text/javascript')
+        var disqus_shortname = 'daddye'
       script(src='/assets/js/main.js', type='text/javascript')

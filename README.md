@@ -18,7 +18,7 @@ In this repo I'll store my refactoring of [personal site](http://daddye.it)
 Install [node.js](http://nodejs.org), install the following [NPM](http://npmjs.org) packages from your terminal:
 
 ```sh
-$ npm install -g wintersmith underscore stylus nib browserify uglify-js clean-css
+$ npm install -g wintersmith wintersmith-perian moment imagemagick
 ```
 
 After that clone the project:
