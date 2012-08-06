@@ -1,7 +1,8 @@
 title: My projects
 template: projects.jade
 
-In questa sezione troverete alcuni progetti **opensource** ed alcuni dei miei lavori più importanti.
+Here you can find some projects **opensource** and some of my most importat works.
 
-Mentre se volete dare un occhio a tutti i siti che ho fatto ...e di cui ho memoria... 
-potete dare un occhio alla pagina [web sites](/web-sites)
+Instead if you want give a glance to all the website I did and I at least rememebr I did, 
+you can watch here [web sites](/web-sites)
+
